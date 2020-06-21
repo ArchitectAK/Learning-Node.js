@@ -35,6 +35,6 @@
 
 ### 2. Understanding NPM: Node Package Manager
 
-- Write your own module - You can create your own modules, and easily include them in your applications. let see an easy example that [creates a module that returns a date and time object](./understanding-npm/myModule.js)
+- Write your own module - You can create your own modules, and easily include them in your applications. let see an easy example that [creates a module that returns a date and time object](./understanding-npm/write-your-own-module/)
 - Manage third-party package with npm
 - What is package.json file?
