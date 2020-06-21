@@ -24,6 +24,10 @@
     - custom algorithm and logic for funtions
     - data structure and object definitions
 - The benefits and features of Javascript
+  - Frontend and backend share the language
+  - Frontend and backend share the code
+  - Dynamic language - this means type is determined by the value , not when variabe is declared
+  - JSON comes naturally with Javascript
 - Asynchrounous tasks and callbacks
 
 ### 2. Understanding NPM: Node Package Manager
