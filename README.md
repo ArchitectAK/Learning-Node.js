@@ -31,7 +31,7 @@
 - Asynchrounous tasks and callbacks
   - When you execute a task synchronously, you wait for it to finish before moving on to another task which is what causes blocking.
   - On the other hand, when you execute tasks asynchronously, you can move on to another task without having to wait for the previous task to finish
-  - The most common way to get started with asynchronous code is to do callbacks. So let's take a look at [some code](.).
+  - The most common way to get started with asynchronous code is to do callbacks. So let's take a look at [some code](./intro-to-node/async-task-and-callback.js).
 
 ### 2. Understanding NPM: Node Package Manager
 
