@@ -40,3 +40,9 @@
 - What is package.json file?
   - What if we end up installing several third party packages, and we want to keep track of what we have installed and are dependent on in a list somewhere? That's where the "package.json" file comes in.
   - run `npm init` command to initiate npm in project repo.
+
+### 3. Reading and Writing files
+
+- Reading from files
+- Access directories
+- Write to a file
