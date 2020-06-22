@@ -1,0 +1,23 @@
+{
+  "name": "Ankit",
+  "techProfile": "Fullstack Developer",
+  "skilss": {
+    "backend": [
+      "AWS",
+      "Nodejs",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Express"
+    ],
+    "forntend": [
+      "Kotlin",
+      "Java",
+      "Android",
+      "Swidt",
+      "iOS",
+      "Flutter",
+      "React Native"
+    ]
+  }
+}
