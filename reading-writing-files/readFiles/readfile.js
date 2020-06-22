@@ -1,7 +1,8 @@
 // Read file way 1
 var fs = require("fs");
 fs.readFile("./data.json", "utf-8", (err, data) => {
-  console.log(data);
+  var data = JSON.parse(data);
+  console.log(data.name);
 });
 
 // Anaother way to read file
