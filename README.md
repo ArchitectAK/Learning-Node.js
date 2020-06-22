@@ -38,3 +38,5 @@
 - Write your own module - You can create your own modules, and easily include them in your applications. let see an easy example that [creates a module that returns a date and time object](./understanding-npm/write-your-own-module/)
 - Manage third-party package with npm -- install any third party library and use it your code. I have created a [sample code file](understanding-npm/third-party-lib/sample.js) which uses lodash library using npm.
 - What is package.json file?
+  - What if we end up installing several third party packages, and we want to keep track of what we have installed and are dependent on in a list somewhere? That's where the "package.json" file comes in.
+  - run `npm init` command to initiate npm in project repo.
