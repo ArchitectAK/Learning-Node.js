@@ -43,6 +43,6 @@
 
 ### 3. Reading and Writing files
 
-- Reading from files
-- Access directories
-- Write to a file
+- Reading from files - reading file from file system sample is [here](./reading-writing-files/readFiles/).
+- Access directories - reading directories from file system sample is [here](./reading-writing-files/access-directories/accessDir.js).
+- Write to a file -
