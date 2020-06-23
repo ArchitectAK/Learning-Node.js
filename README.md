@@ -45,4 +45,4 @@
 
 - Reading from files - reading file from file system sample is [here](./reading-writing-files/readFiles/).
 - Access directories - reading directories from file system sample is [here](./reading-writing-files/access-directories/accessDir.js).
-- Write to a file -
+- Write to a file - writing file to file system sample is [here](./reading-writing-files/write-a-file/).
