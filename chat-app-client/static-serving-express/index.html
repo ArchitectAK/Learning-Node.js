@@ -25,7 +25,13 @@
   <div class="jumbotron">
     <h1 class="display-4">Send Message</h1>
     <br />
-    <input class="form-control" placeholder="Name" />
+    <input id="name" class="form-control" placeholder="Name" />
+    <br />
+    <textarea
+      id="message"
+      class="form-control"
+      placeholder="Message"
+    ></textarea>
     <br />
     <button id="send" class="btn btn-success">Send</button>
   </div>
@@ -34,7 +40,8 @@
 <script>
   $(() => {
     $("#send").click(() => {
-      addMessages({ name: "Ankit", message: "hello" });
+      var message = { name: $("#name").val(), message: $("#message").val() };
+      postMessage(message);
     });
     getMessages();
   });
@@ -44,9 +51,14 @@
       `<h4> ${message.name} </h4> <p> ${message.message} </p>`
     );
   }
-  function getMessages(message) {
-    $.get("http://localhost:3001/messages", (data) => {
+
+  function getMessages() {
+    $.get("http://localhost:3000/messages", (data) => {
       data.forEach(addMessages);
     });
+  }
+
+  function postMessage(message) {
+    $.post("http://localhost:3000/messages", message);
   }
 </script>
