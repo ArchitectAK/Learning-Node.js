@@ -58,7 +58,10 @@
 ### 3. Demo Chat App Client for the browser
 
 - Static serving with Express
+
   - You can either host static content or dynamic content.
   - Static content can be things like HTML files for web sites or images, videos, etc.
   - Dynamic content, on the other hand, is served through a web API, or sometimes it's used to serve dynamic webpages where the content or the view is composed on the server itself.
   - [Sample code for the static demo chat is here](./chat-app-client/).
+
+- Creating browser app - [Simple app code is here](./chat-app-client/static-serving-express/index.html)
