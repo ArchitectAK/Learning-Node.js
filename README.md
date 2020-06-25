@@ -65,3 +65,5 @@
   - [Sample code for the static demo chat is here](./chat-app-client/).
 
 - Creating browser app - [Simple app code is here](./chat-app-client/static-serving-express/index.html)
+- Create a get messages service - [Added logic of messages array to server.js](./chat-app-client/static-serving-express/server.js)
+- Create a post messages service -

@@ -6,8 +6,7 @@
   crossorigin="anonymous"
 />
 <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
   crossorigin="anonymous"
 ></script>
 <script
@@ -37,11 +36,17 @@
     $("#send").click(() => {
       addMessages({ name: "Ankit", message: "hello" });
     });
+    getMessages();
   });
 
   function addMessages(message) {
     $("#messages").append(
       `<h4> ${message.name} </h4> <p> ${message.message} </p>`
     );
+  }
+  function getMessages(message) {
+    $.get("http://localhost:3001/messages", (data) => {
+      data.forEach(addMessages);
+    });
   }
 </script>
