@@ -54,3 +54,11 @@
   - And in software, it's essentially the same thing. It is a supporting structure that allows you to build on top of it. When it comes to web, and we want to build large APIs, or maybe HTTP servers, we can leverage web frameworks, and there are several options we can look at.
   - Each of these provide us with the structure and components you need to quickly make serving static files, like traditional websites, easy. Or we can put together a web API to interact in a web app. A web API is a service that allows us to get and save data to our server or back end, such as a web API that allows us to maybe create users, serve a list of users, etc.
 - Express and Socket.io - Socket.io enables real time, bidirectional, event based communication. Express on the other hand allows the client to send a request to the server, but the server cannot send request to the client and so it does not have bidirectional communication. Socket.io solves this. In other words, we can push notifications from the server to the client when an event happens, as well as other data
+
+### 3. Demo Chat App Client for the browser
+
+- Static serving with Express
+  - You can either host static content or dynamic content.
+  - Static content can be things like HTML files for web sites or images, videos, etc.
+  - Dynamic content, on the other hand, is served through a web API, or sometimes it's used to serve dynamic webpages where the content or the view is composed on the server itself.
+  - [Sample code for the static demo chat is here](./chat-app-client/).
