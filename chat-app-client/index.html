@@ -19,6 +19,7 @@
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"
 ></script>
+<script src="/socket.io/socket.io.js"></script>
 <div class="container">
   <br />
   <div class="jumbotron">
@@ -37,6 +38,7 @@
   <div id="messages"></div>
 </div>
 <script>
+  var socket = io.connect("http://localhost:3000/");
   $(() => {
     $("#send").click(() => {
       var message = { name: $("#name").val(), message: $("#message").val() };
@@ -57,6 +59,10 @@
       data.forEach(addMessages);
     });
   }
+
+  socket.on("connect", (socket) => {
+    console.log("User connected");
+  });
 
   function postMessage(message) {
     $.post("http://localhost:3000/messages", message);

@@ -1,6 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
+const server = require("http").createServer(app);
+const io = require("socket.io")(server);
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
@@ -21,6 +23,6 @@ app.post("/messages", (req, res) => {
   res.sendStatus(200);
 });
 
-var server = app.listen(3001, () => {
+server.listen(3000, () => {
   console.log("server is listening on port", server.address().port);
 });
