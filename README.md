@@ -67,4 +67,7 @@
 - Creating browser app - [Simple app code is here](./chat-app-client/static-serving-express/index.html)
 - Create a get messages service - [Added logic of get messages](./chat-app-client/static-serving-express/server.js)
 - Create a post messages service - [Added logic of post messages](./chat-app-client/static-serving-express/server.js)
-- Connect to Socket.io from the browser app
+- Connect to Socket.io from the browser app -
+  - With Socket.IO, we will be able to notify clients or the app running in the browser when another user has sent a chat message, that way the app will update their message list instantly.
+  - Socket.IO works as pushing notification work.
+  - The nice thing about the Socket.IO library is that if a browser is older and does not support WebSockets, it will default back to polling and it has that functionality built in so it will always work, even if it's not as efficient with older browsers.
