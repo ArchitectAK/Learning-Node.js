@@ -48,6 +48,7 @@
     getMessages();
   });
 
+  socket.on("message", addMessages);
   function addMessages(message) {
     $("#messages").append(
       `<h4> ${message.name} </h4> <p> ${message.message} </p>`
@@ -59,10 +60,6 @@
       data.forEach(addMessages);
     });
   }
-
-  socket.on("connect", (socket) => {
-    console.log("User connected");
-  });
 
   function postMessage(message) {
     $.post("http://localhost:3000/messages", message);

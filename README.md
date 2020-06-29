@@ -72,4 +72,6 @@
   - Socket.IO works as pushing notification work.
   - The nice thing about the Socket.IO library is that if a browser is older and does not support WebSockets, it will default back to polling and it has that functionality built in so it will always work, even if it's not as efficient with older browsers.
 
+- Create your Socket.io event
+
 - [Sample Code above steps is here](./chat-app-client/)
