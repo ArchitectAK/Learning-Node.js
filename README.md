@@ -75,3 +75,6 @@
 - Create your Socket.io event
 
 - [Sample Code above steps is here](./chat-app-client/)
+
+### 6. Exploring Databases
+- Types of data frameworks
