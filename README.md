@@ -77,4 +77,17 @@
 - [Sample Code above steps is here](./chat-app-client/)
 
 ### 6. Exploring Databases
+
 - Types of data frameworks
+  - There are many different database technologies, such as MongoDB, MySQL, Veras, and many more. Node has packages to work with most of these options.
+  - Most of these options fall into two categories: Either SQL or NoSQL.
+- SQL stands for structured query language.
+  - The key word here is structured, meaning the data stored inside is structured.
+  - The database knows and cares about the structure, and the tables that store the data must be designed with that in mind.
+  - The object classes, which represent the items that will go into those structured tables, must also be designed. There is a lot of up-front design work in doing so, but also some performance and query benefits in some cases.
+- NoSQL, on the other hand, is the absence of that structure.
+  - We just put data into collections without paying much attention to the structure. As a result, there's less up-front design work, and possible performance increases in some cases.
+- There's no good solution for all cases, and each project has requirements that might match SQL or NoSQL better or worse.
+- A good analogy from stack overflow is thinking of SQL like an automatic car, where a lot of the manual work is done for you, and some performance improvements, in other cases. And NoSQL is like a manual, or standard car.
+- Something to keep in mind is that there are some databases that share the features of SQL and NoSQL.
+-
