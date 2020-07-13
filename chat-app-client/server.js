@@ -9,8 +9,7 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const dbUrl =
-  "mongodb://<username>:<password>@ds343718.mlab.com:43718/learning-nod";
+const dbUrl = "mongodb://ankit:ankit123@ds343718.mlab.com:43718/learning-nod";
 
 var messages = [
   { name: "Ankit", message: "Hi" },
@@ -28,7 +27,7 @@ app.post("/messages", (req, res) => {
   res.sendStatus(200);
 });
 
-mongoose.connect(dbUrl, (err) => {
+mongoose.connect(dbUrl, { useMongoCliet: true }, (err) => {
   console.log("Mongodb connection", err);
 });
 
