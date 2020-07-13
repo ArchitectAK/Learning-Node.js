@@ -91,3 +91,9 @@
 - A good analogy from stack overflow is thinking of SQL like an automatic car, where a lot of the manual work is done for you, and some performance improvements, in other cases. And NoSQL is like a manual, or standard car.
 - Something to keep in mind is that there are some databases that share the features of SQL and NoSQL.
 -
+- Set up MongoDB
+- Mongoose
+  - Mongoose allows us to elegantly work with our mongodb database with object schemas.
+  - Object schemas are JavaScript objects we create that will represent the type of data we will be putting in our database.
+  - Even though mongodb is NoSQL, and does not have structure, with Mongoose, there is a bit of structure we must design initially.
+  - This gives us some benefits of easily interacting with our data through objects, and other things such as validation.
